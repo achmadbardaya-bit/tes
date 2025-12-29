@@ -1,0 +1,141 @@
+:root {
+  --bg-main: #0f172a; /* background utama */
+  --bg-card: #020617; /* card */
+  --bg-soft: #020617;
+  --text-main: #e5e7eb; /* teks utama */
+  --text-muted: #9ca3af;
+  --accent: #3b82f6; /* biru bootstrap */
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  padding-top: 72px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #020617 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.15),
+    rgba(2, 6, 23, 0.9)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Card */
+.card {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-hover {
+  transition: 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+}
+
+/* Text */
+.text-muted,
+small,
+.muted {
+  color: var(--text-muted) !important;
+}
+
+/* Badge soft */
+.badge-soft {
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+/* Form */
+.form-control,
+.form-select,
+textarea {
+  background-color: #020617;
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.form-control::placeholder {
+  color: var(--text-muted);
+}
+
+.form-control:focus {
+  background-color: #020617;
+  color: var(--text-main);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.15rem rgba(59, 130, 246, 0.25);
+}
+
+/* Accordion */
+.accordion-item {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.accordion-button {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+}
+
+/* List group */
+.list-group-item {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+body.light-mode {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+body.light-mode .navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+body.light-mode .nav-link,
+body.light-mode .navbar-brand {
+  color: #0f172a !important;
+}
+
+body.light-mode .card {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: 1px solid #e5e7eb;
+}
+
+body.light-mode .text-muted {
+  color: #6b7280 !important;
+}
+
+body.light-mode .form-control {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: 1px solid #d1d5db;
+}
